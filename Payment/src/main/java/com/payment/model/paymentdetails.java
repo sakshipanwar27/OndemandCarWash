@@ -20,13 +20,7 @@ public class paymentdetails {
 	public Float getAmount() {
 		return Amount;
 	}
-	public paymentdetails(int orderId, Float amount, String paymentstatus, String transId) {
-		super();
-		this.orderId = orderId;
-		Amount = amount;
-		this.paymentstatus = paymentstatus;
-		this.transId = transId;
-	}
+	
 	public void setAmount(Float amount) {
 		Amount = amount;
 	}

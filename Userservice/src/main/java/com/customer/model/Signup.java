@@ -16,7 +16,7 @@ public class Signup {
 	private String contactno;
 	private String email;
 
-	@Transient
+	
 	public static final String SEQUENCE_NAME = "users_sequence";
 
 	public Signup() {

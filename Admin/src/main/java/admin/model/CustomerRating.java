@@ -2,7 +2,7 @@ package admin.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "ratingdb")
+@Document(collection = "ratingdb")                                            //used to identify a domain object, which is persisted to MongoDB
 public class CustomerRating {
 	
 	     private String washername;

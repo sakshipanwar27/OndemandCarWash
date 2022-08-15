@@ -11,8 +11,11 @@ public interface WasherRepo extends MongoRepository<Washers, Integer> {
 
 	List<Washers> findBylocation(String location);
 	
-	Washers findByName(String name);
+	
+	@SuppressWarnings("unchecked")
+	public Washers save(Washers washers);
 
+	
 	
 	
 }

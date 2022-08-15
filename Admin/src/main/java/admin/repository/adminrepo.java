@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import admin.model.Admin;
 @Repository
 
-public interface adminrepo extends MongoRepository<Admin, Integer> {
+public interface adminrepo extends MongoRepository<Admin, Integer>{
 	
 
 }

@@ -2,7 +2,7 @@ package admin.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-@Document(collection ="washerdb")
+@Document(collection ="washerdb")                                    ////used to identify a domain object, which is persisted to MongoDB
 public class Washers {
 	
 	@Id

@@ -9,5 +9,7 @@ import com.customer.model.Signup;
 @Repository
 public interface Userrepo extends MongoRepository<Signup, Integer>{
 
+	
+
 
 }

@@ -2,7 +2,7 @@ package admin.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-@Document(collection = "admindb")
+@Document(collection = "admindb")                          ////used to identify a domain object, which is persisted to MongoDB
 public class Admin {
 	@Id
 	 int id;
@@ -39,8 +39,8 @@ public class Admin {
 		this.name = name;
 		this.password =password;
 	}
-	@Override
-	public String toString() {
+	@Override                                                       //used for helping to check whether the developer what to override the correct method in the parent class or interface
+	public String toString() {                                       // used to return a string representation of an object. 
 		return "Admin [id=" + id + ", name=" + name + ", password=" + password + "]";
 	}
 	

@@ -21,19 +21,9 @@ public class Swagger2 {
 	.select()
 	.apis(RequestHandlerSelectors.basePackage("com.order"))
 	.paths(PathSelectors.any())
-	.build()
-	.apiInfo(getApiInfo());
+	.build();
 	}
-	private ApiInfo getApiInfo() {
-		return new ApiInfo(
-		"On Demand Car Wash System",
-		"Case Study Project",
-		"Terms of Service",
-		"Free to use",
-		new springfox.documentation.service.Contact("Bibhuti Bhusan Sahoo", "http://Youtube.com", "bhusan@gmail.com"),
-		"API Licence","http://Youtube.com", Collections.emptyList());
-	}
-
+	
 
 
 }

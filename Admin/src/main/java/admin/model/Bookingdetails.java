@@ -3,7 +3,7 @@ package admin.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="Bookingdetailsdb")
+@Document(collection="Bookingdetailsdb")                                ////used to identify a domain object, which is persisted to MongoDB
 public class Bookingdetails {
 
 @Id

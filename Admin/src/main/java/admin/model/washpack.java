@@ -2,14 +2,13 @@ package admin.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-@Document(collection = "washpackdb")
+@Document(collection = "washpackdb")                    //used to identify a domain object, which is persisted to MongoDB
 public class washpack {
 	@Id
 	private int id;
 	private String packname;
 	private String description;
 	private String cost;
-	
 	
 	
 	public String getCost() {
